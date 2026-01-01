@@ -10,19 +10,35 @@
             background-color: rgb(34, 221, 106);
         }
 
-        img {
+        img{
             height: 200px;
-            width: 300px;
+            /* width: 300px; */
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
+
         }
 
-        .card {
+        .card1,.card2,.card3{
             background-color: aliceblue;
+        
             border-radius: 20px;
             height: 510px;
             width: 300px;
+            flex: 1;
             
+
+            
+        }
+        .card1 img {
+        width: 300px;
+            
+        }
+        .card2 img {
+         width: 300px;
+            
+        }
+        .card3 img {
+         width: 300px;
         }
         .full{
          text-align: center;
@@ -43,23 +59,26 @@
             height: 40px;
             background-color:#1a73e8;
             color: aliceblue;
+            /* margin-left: 15px; */
+    
         
         }
         .container{
-            justify-content: center;
             display: flex;
-            gap: 10px;
+            gap:10px;
+            width: 300px;
+            margin-left: 200px;
         }
+     
         
     </style>
 </head>
 
 <body>
     <h2 style="text-align: center;color: aliceblue;">How to create a card with css</h2>
-    <div class="container">
-    <div align="center">
-    <div class="card" >
-        <img id="img1"
+    <div class="container" align ="center">
+    <div class="card1" >
+        <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuXOJ5Tq7xp4ia8MgPCJMEJk-GSnWyuY5W4Q&s" alt="">
         <h2 class="full">Full Stack Devolopment Roadmap</h2>
         <p>A comprehensive roadmap for becoming a fullstack devoloper ,covering varios technologies and skills required in both front-end and back-end</p>
@@ -70,12 +89,11 @@
        </div>
         <button>read-more...</button>
     </div>
-</div>
-<div align="center">
-    <div class="card" >
-        <img id="img1"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuXOJ5Tq7xp4ia8MgPCJMEJk-GSnWyuY5W4Q&s" alt="">
-        <h2 class="full">Full Stack Devolopment Roadmap</h2>
+
+    <div class="card2" >
+        <img
+            src="https://dotnettrickscloud.blob.core.windows.net/article/3720240703120755.png" alt="">
+        <h2 class="full">Python Devolopment Roadmap</h2>
         <p>A comprehensive roadmap for becoming a fullstack devoloper ,covering varios technologies and skills required in both front-end and back-end</p>
        <div class="a">
         <a href="" >HTML/CSS</a><br>
@@ -84,12 +102,9 @@
        </div>
         <button>read-more...</button>
     </div>
-</div>
-<div align="center">
-    <div class="card" >
-        <img id="img1"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuXOJ5Tq7xp4ia8MgPCJMEJk-GSnWyuY5W4Q&s" alt="">
-        <h2 class="full">Full Stack Devolopment Roadmap</h2>
+    <div class="card3" >
+        <img  src="https://media.geeksforgeeks.org/wp-content/uploads/20231212110910/Flutter-Developer---A-Complete-roadmap.png" alt="">
+        <h2 class="full">Flutter Devolopment Roadmap</h2>
         <p>A comprehensive roadmap for becoming a fullstack devoloper ,covering varios technologies and skills required in both front-end and back-end</p>
        <div class="a">
         <a href="" >HTML/CSS</a><br>
@@ -97,9 +112,10 @@
         <a href="">Node.js</a><br>
        </div>
         <button>read-more...</button>
-    </div>
 </div>
+
 </div>
+
 </body>
 
 </html>

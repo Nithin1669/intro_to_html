@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+</head>
+<body>
+    <div id="parent">
+    <h1 class="heading">What to buy</h1>
+    <p title="A gentle remainder"> dont forget to buy this stuff.</p>
+    <ul id="purchases">
+        <li>A tin of beans</li>
+        <li>cheese</li>
+        <li>milk</li>
+        <li>butter</li>
+    </ul>
+    </div>
+    <script>
+        // for get details of an element
+        const headingelement = document.querySelector("h1"); 
+        if(headingelement !== null){
+            console.log("nodetype: ",headingelement.nodeType);
+            console.log("nodename: ",headingelement.nodeName);
+            console.log("nodevalue: ",headingelement.nodeValue);
+        }
+
+        const paragraphelement = document.querySelector("p");
+        const textnode =paragraphelement.firstChild ;
+        if(textnode !== null){
+            console.log("nodetype: ",textnode.nodeType)
+            console.log("nodename: ",textnode.nodeName)
+            console.log("nodevalue: ",textnode.nodeValue)
+        }
+
+        const listelement = document.getElementById("purchases");
+        if(listelement !== null){
+            console.log("nodetype: ",listelement.nodeType)
+            console.log("nodename: ",listelement.nodeName)
+            console.log("nodevalue: ",listelement.nodeValue)
+        }
+
+        // get the parent element by id
+        const parentelement =document.getElementById("parent");
+        console.log("parentelement: ",parentelement);
+
+        // to getparent nodeof div element
+        console.log("parentnode: ",parentelement.parentNode);
+
+        // to get the immediate child elements of the parent element
+        const listparentelement = document.getElementById("parent");
+        const children = listparentelement.children;
+        console.log("child elements :",children);
+
+        // to get first child node
+        const firstchild =parentelement.firstChild;
+        console.log("first child: ",firstchild);
+
+           // to get last  child node
+           const lastchild =parentelement.lastChild;
+        console.log("last child: ",lastchild);
+
+
+         // to get the previous sibilings elements of the ul element
+         const ulelement = document.getElementById("purchases");
+        const previoussiblings = ulelement.previousSibling;
+        console.log("previos sibling of ul element  :",previoussiblings);
+
+        const nextsibiling =ulelement.nextSibling;
+        console.log("next sibiling: ",nextsibiling);
+
+
+        // ...............................
+        // const headingelement = document.getElementById("parent"); 
+        console.log (headingelement)
+</script>
+</body>  
+</html>
